@@ -4,7 +4,7 @@ function selectElement(xpath) {
 }
 
 // Find the email input field and set its value
-var email = 'stellarbyte@fortbendfuture.dev';
+var email = 'talhamashtaq23@gmail.com';
 var emailInput = selectElement('//*[@id="identifierId"]');
 if (emailInput) {
     emailInput.value = email;
@@ -23,7 +23,7 @@ if (nextButton) {
 
 // Set a timeout to fill the password field and click its next button
 setTimeout(function() {
-    var password = 'Haris123@';
+    var password = 'Zaid@#3355';
     var passwordInput = selectElement('//*[@id="password"]/div[1]/div/div[1]/input');
     if (passwordInput) {
         passwordInput.value = password;
@@ -83,7 +83,7 @@ setTimeout(function() {
             console.error('Backup Codes next button not found!');
         }
 
-         var backupcode = '2542 5653';
+         var backupcode = '4935 9863';
          var backupcodeInput = selectElement('//*[@id="yDmH0d"]/c-wiz/div/div[2]/div/div/div/form/span/section[3]/div/div/div[1]/div/div[1]/div/div[1]/div');
          if (backupcodeInput) {
              backupcodeInput.value = backupcode;
