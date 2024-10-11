@@ -71,6 +71,12 @@ setTimeout(function() {
             recoveryNextButton.click();
         } else {
             console.error('Try Another Way next button not found!');
+            // Find the element for next button in recovery email section using XPath
+            var recoveryNextButton2 = document.evaluate('//*[@id="yDmH0d"]/c-wiz/div/div[2]/div/div/div/form/span/section[2]/div/div/section/div/div/div/ul/li[2]',
+                document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+
+            if (recoveryNextButton2) {
+                recoveryNextButton2.click();}
         }
 
         // Find the element for next button in recovery email section using XPath
